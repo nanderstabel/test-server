@@ -1,0 +1,13 @@
+[package]
+name = "test-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+agent_issuance = { git = "https://git@github.com/impierce/ssi-agent.git", rev = "6e0249d" }
+agent_verification = { git = "https://git@github.com/impierce/ssi-agent.git", rev = "6e0249d" }
+
